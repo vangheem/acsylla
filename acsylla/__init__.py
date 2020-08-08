@@ -1,7 +1,6 @@
 from . import errors
 from .base import (
     Batch,
-    Cluster,
     PreparedStatement,
     Result,
     Row,
@@ -9,6 +8,7 @@ from .base import (
     Statement,
     Value,
 )
+from ._cython.cyacsylla import Cluster
 from .factories import (
     create_batch_logged,
     create_batch_unlogged,
